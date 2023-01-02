@@ -177,18 +177,3 @@ function playAgain() {
   text("GAME OVER", 100, 300);
   noLoop();
 }
-
-const highScore = ( p ) => {
-  p.setup = function(){
-    p.createCanvas(750, 750);
-    p.background("white");
-    img = loadImage('High-Score.JPG');
-  };
-
-  p.draw = function(){
-    p.image(img, 0, 0);
-  };
-};
-
-
-let bestScore = new p5(highScore);
